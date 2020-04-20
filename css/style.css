@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*This element will center the whole page.
+copy the code bellow and past inside the .row class to see how it is setted up
+border: 1px solid white;
+*/
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    border: 0px solid black;
+
+}
+/*This element will center the hi dear text.
+copy the code bellow and past inside the .row class to see how it is setted up
+border: 1px solid white;
+*/
+.box{
+	width: 40%;
+	margin: 0 auto;
+	margin-top:4em;
+	font-size: 49px;
+}
+
+body,html {
+	font-family: Arial;
+	font-size: 20px;
+	background: #e72d58;
+	color: white;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+/*This for the background header images
+*/
+header{
+	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8)), url(../images/3527266.jpg);
+    background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+/*And here is the NavBar, it make the logo and the navbar be on top in the same line
+you can copy the code bellow and past in each element to see how the are setup
+*/
+nav {
+    padding-top:0px;
+	width: 100%;
+	background: #f64639;
+}
+
+.logo {
+	margin-top: 0px;
+	width: 10%;
+	height: 10%;
+	
+}
+nav ul {
+	float: right;
+	width: 50%;
+    margin-top: 40px;
+    list-style: none;
+   
+}
+nav ul li  {
+    display: inline-block;
+    margin-left: 40px;
+}
+img {
+	margin-top: 30px;
+	margin-left: -30px;
+	width: 10%;
+	height: 10%;
+}
+
+/*--------------------------------------------------*/
+/* Code for Small phones to small tablets: from 481 to 767px Screen; */
+/*-------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+	nav {
+
+		height: 250px;
+	}
+	.logo {
+    margin: 0 auto;
+	display: block;
+
+	width: 20%;
+	height: 30%;
+    }
+
+	nav ul {
+    float: none;
+
+	margin: 0 auto;
+	width: 80%;
+   
+   
+    }
+nav ul li  {
+	margin-left: 0;
+	padding: 0.2em;
+	margin-bottom: .5em;
+    display: block;
+    background: #f61619;
+    }
+nav ul li:hover  {
+    background: #f68699;
+    }
+
+
+}
